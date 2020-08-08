@@ -3,39 +3,41 @@
 </script>
 
 <style>
-  h1,
   p {
     text-align: center;
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: 2.8em;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0 0 0.5em 0;
-  }
-
-  p {
     margin: 1em auto;
   }
 
-  @media (min-width: 480px) {
-    h1 {
-      font-size: 4em;
-    }
+  div {
+    display: grid;
+    grid-template-columns: 500px;
+    justify-content: center;
+    margin-top: 22px;
+  }
+
+  a {
+    display: block;
+  }
+
+  img {
+    width: 22px;
+    margin-top: 8px;
   }
 </style>
 
 <svelte:head>
-  <title>derek's site</title>
+  <title>Derek's Site</title>
 </svelte:head>
 
-<h1>Derek Burandt</h1>
-
-<p>
-  <strong>
-    Welcome to my personal web page. Stay tuned for some blog posts if i ever
-    make some..
-  </strong>
-</p>
+<div>
+  <p>
+    Hello, my name is
+    <strong>Derek Burandt</strong>
+    and this is my personal webpage. I'm a software developer based out of
+    Toronto Ontario, 🇨🇦. Stay tuned for some future blog posts! Until then,
+    here's my github:
+    <a href="https://github.com/dburandt">
+      <img src="github-icon.png" alt="github" />
+    </a>
+  </p>
+</div>
